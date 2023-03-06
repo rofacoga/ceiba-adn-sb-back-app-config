@@ -1,5 +1,5 @@
 server:
-   port: 8080
+   port: 8081
    servlet:
       context-path: /book-service/
       session:
@@ -10,14 +10,12 @@ springdoc:
 
 eureka:
    client:
-      registerWithEureka: false
-      fetchRegistry: false
       healthcheck:
          enable: true
       region: default
-#      registryFetchIntervalSeconds: 5
-#      serviceUrl:
-#         defaultZone: http://discUser:discPassword@localhost:8082/eureka/
+      registryFetchIntervalSeconds: 5
+      serviceUrl:
+         defaultZone: http://localhost:8099/eureka/
 
 security:
    user:
