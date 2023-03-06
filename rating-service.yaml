@@ -4,7 +4,7 @@ jasypt:
       algorithm: PBEWithMD5AndDES
 
 server:
-   port: 8081
+   port: 8082
    servlet:
       context-path: /
       session:
@@ -20,7 +20,8 @@ eureka:
       region: default
       registryFetchIntervalSeconds: 5
       serviceUrl:
-         defaultZone: http://discUser:discPassword@localhost:8080/eureka/
+         defaultZone: http://localhost:8099/eureka/
+         #defaultZone: http://discUser:discPassword@localhost:80/eureka/
 
 security:
    user:
